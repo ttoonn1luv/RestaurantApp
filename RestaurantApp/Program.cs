@@ -22,7 +22,7 @@ namespace RestaurantApp
             {
                 Console.WriteLine(new string('-', 40));
                 Console.WriteLine($"{item.Name} Type {item.Type.Trim()} -- {item.Rate}");
-                
+                Console.WriteLine(new string('-', 40));
             }
 
 
