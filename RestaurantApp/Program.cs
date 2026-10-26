@@ -20,7 +20,7 @@ namespace RestaurantApp
 
             foreach (var item in restaurants)
             {
-                
+                Console.WriteLine(new string('-', 40));
                 Console.WriteLine($"{item.Name} Type {item.Type.Trim()} -- {item.Rate}");
                 
             }
