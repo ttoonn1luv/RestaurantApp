@@ -11,16 +11,19 @@ namespace RestaurantApp
         static void Main(string[] args)
         {
             List<Restaurant> restaurants = new List<Restaurant>
-{
-         new Restaurant(1, "Quanjude Roast Duck", "Beijing Cuisine", 4.5),
-         new Restaurant(2, "Donglaishun Hot Pot", "Hot Pot", 4.6),
-         new Restaurant(3, "Din Tai Fung", "Taiwanese Cuisine", 4.7)
-         new Restaurant(4, "Huguosi Snacks" ," Snacks ", 4.2)
-         new Restaurant(4, "Haidilao Hot Pot" ," Hot Pot ", 4.)
-        };
-        foreach (var item  in restaurants) 
-        {
-            Console.WriteLine($"{item.name} Type {item.Type} -- {item.Rate}";
+            {
+
+             new Restaurant(1, "Quanjude Roast Duck", "Beijing Cuisine", 4.5),
+            new Restaurant(2, "Donglaishun Hot Pot", "Hot Pot", 4.6),
+             new Restaurant(3, "Din Tai Fung", "Taiwanese Cuisine", 4.7),
+             new Restaurant(4, "Huguosi Snacks" ," Snacks ", 4.2),
+             new Restaurant(4, "Haidilao Hot Pot" ," Hot Pot ", 4.8)
+             };
+
+            foreach (var item in restaurants)
+            {
+                Console.WriteLine($"{item.Name} Type {item.Type} -- {item.Rate}");
+            }
         }
     }
     public class Restaurant
@@ -32,7 +35,13 @@ namespace RestaurantApp
 
         public Restaurant(int id, string name, string type, double rate)
         {
-           
+            this.Id = id;
+            this.Name = name;
+            this.Type = type;
+            this.Rate = rate;
+
+
         }
     }
+    
 }
