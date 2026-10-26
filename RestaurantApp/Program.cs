@@ -17,20 +17,23 @@ namespace RestaurantApp
                 new Restaurant(4, "Haidilao Hot Pot", " Hot Pot ", 4.8)
             };
 
-            
+
             foreach (var item in restaurants)
             {
+                
                 Console.WriteLine($"{item.Name} Type {item.Type.Trim()} -- {item.Rate}");
+                
             }
 
-            
+
             int totalRestaurants = restaurants.Count;
             double averageRate = restaurants.Average(r => r.Rate);
 
-            
+            Console.WriteLine(new string('-', 40));
             Console.WriteLine($"จำนวนร้านทั้งหมด: {totalRestaurants} restaurant ");
             Console.WriteLine($"ค่าเฉลี่ยคะแนนรีวิวทั้งหมด: {averageRate}");
-                
+
+                         
         }
     }
 
